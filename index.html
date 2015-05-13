@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="">
 <head>
 	<meta charset="UTF-8">
 	<title>ngMadLibs</title>
@@ -7,25 +7,39 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body ng-init="femaleName=''; dirtyTask=''; obnoxiousCelebrity=''; jobTitle=''; celebrity=''; hugeNumber=''; tediousTask=''; uselessSkill=''; adjective=''">
 
+<!-- HEADER -->
 	<div class="header-images">
 		<img id="smiley" src="images/mad-lib-happy-face.png" alt="smiley logo">
 		<img id="logo" src="images/ng-mad-libs-logo.png" alt="mad libs logo">
 	</div>
 
-	<div id="input-container">
-		<h2 id="input-header">Please Provide the following words:</h2>
-		<div id="inputs">
-			<input placeholder="noun" type="text">
-			<input placeholder="adjective" type="text">
-			<input placeholder="eddie" type="text">
-			<input placeholder="boobies" type="text">
-			<input placeholder="noun" type="text">
-			<input placeholder="noun" type="text">
-			<input placeholder="noun" type="text">
-			<input placeholder="noun" type="text">
-			<input placeholder="noun" type="text">
+<!-- MAIN CONTENT -->
+
+	<!-- Inputs -->
+	<div class="main-content">
+		<div id="input-container">
+			<h2 id="input-header">Please Provide the following words:</h2>
+			<div id="inputs">
+				<input placeholder="Female name" type="text" ng-model="femaleName"/>
+				<input placeholder="Dirty task" type="text" ng-model="dirtyTask"/>
+				<input placeholder="Obnoxious Celebrity" type="text" ng-model="obnoxiousCelebrity"/>
+				<input placeholder="Job title" type="text" ng-model="jobTitle"/>
+				<input placeholder="Celebrity" type="text" ng-model="celebrity"/>
+				<input placeholder="Huge number" type="text" ng-model="hugeNumber"/>
+				<input placeholder="Tedious task" type="text" ng-model="tediousTask"/>
+				<input placeholder="Useless skill" type="text" ng-model="uselessSkill"/>
+				<input placeholder="Adjective" type="text" ng-model="adjective"/>
+			</div>
+		</div>
+
+	<!-- MadLib Output -->
+		<div id="madlib-container">
+			<div class="madlib-text">
+				<p>{{ femaleName }} was a {{jobTitle}} who loved her technology. Although she loved parts of her job, she absolutely hated  {{tediousTask}} and {{dirtyTask}}. So, {{femaleName}} met with her life mentor {{celebrity}} who told her to learn how to {{uselessSkill}} with Thinkful. Thinkful didn't offer a course on {{uselessSkill}} so she studied programming instead.</p> 
+				<p>What a great decision! With her new skills, {{femaleName}} built a(n) {{adjective}} robot named {{obnoxiousCelebrity}} that not only loved {{dirtyTask}} but did it {{hugeNumber}} faster. </p>
+			</div>
 		</div>
 	</div>
 	
