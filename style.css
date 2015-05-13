@@ -1,0 +1,82 @@
+html {
+	background-color: #fff;
+}
+
+body {
+	height: 100%;
+	font-family: Comic sans ms;
+}
+
+/******HEADER*****/
+
+.header-images {
+	width: 500px;
+	height: 104px;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid black;
+}
+
+#smiley, #logo {
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+#smiley {
+	float: left;
+	margin-left: 5px;
+}
+
+#logo {
+	float: right;
+	margin-left: -5px;
+}
+
+
+/******INPUTS*****/
+
+#input-container {
+	border: 2px solid black;
+	height: 140px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#inputs {
+	width: 400px;
+	margin: 10px 50px;
+}
+
+input {
+	width: 120.5px;
+	margin: 1px;
+	border: 1px solid black;
+}
+
+#input-header {
+	font-size: 1.2em;
+	font-weight: 200;
+	margin: 10px auto 0 50px;
+}
+
+/*****MADLIB*****/
+
+#madlib-container {
+	width: 500px;
+	height: 320px;
+	border: 2px solid black;
+	margin: 0 auto;
+}
+
+.madlib-text {
+	width: 420px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+
+
+
+
+
