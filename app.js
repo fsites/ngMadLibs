@@ -1,4 +1,4 @@
-angular.module('madlibs', [])
+angular.module('madlibs', [ngMessages])
 .controller('MyCtrl', ['$scope', function($scope){
 	$scope.femaleName = '';
 	$scope.dirtyTask = '';

@@ -38,7 +38,7 @@ body {
 
 #input-container {
 	border: 2px solid black;
-	height: 140px;
+	height: 160px;
 	width: 500px;
 	margin: 0 auto;
 }
@@ -59,6 +59,13 @@ input {
 	font-weight: 200;
 	margin: 10px auto 0 50px;
 }
+
+#submit-button:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}
+
 
 /*****MADLIB*****/
 
