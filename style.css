@@ -38,11 +38,7 @@ body {
 
 #input-container {
 	border: 2px solid black;
-<<<<<<< HEAD
 	height: 160px;
-=======
-	height: 140px;
->>>>>>> f9dfa691e23e327dbb409ffed40b16674df42922
 	width: 500px;
 	margin: 0 auto;
 }
@@ -64,16 +60,12 @@ input {
 	margin: 10px auto 0 50px;
 }
 
-<<<<<<< HEAD
-#submit-button:hover {
+.button:hover {
 	cursor: pointer;
 	background-color: black;
 	color: white;
 }
 
-
-=======
->>>>>>> f9dfa691e23e327dbb409ffed40b16674df42922
 /*****MADLIB*****/
 
 #madlib-container {
