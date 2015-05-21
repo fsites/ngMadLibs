@@ -1,27 +1,28 @@
-angular.module('madlibs', ['ngMessages'])
+angular.module('madlibs', [])
 .controller('MyCtrl', ['$scope', function($scope){
+
+	$scope.display = 0;
 
 	$scope.onSubmit = function (){
 		if ($scope.madlib.$valid) {
 			console.log('valid form')
 			$scope.display = 1;
 		} else {
-			console.log('go fuck yourself')
+			null
 		}
 	};
 
 	$scope.reset = function() {
-		$scope.display = 0
 		$scope.femaleName = '';
 		$scope.dirtyTask = '';
-		$scope.obnxiousCelebrity = '';
+		$scope.obnoxiousCelebrity = '';
 		$scope.jobTitle = '';
 		$scope.celebrity = '';
 		$scope.hugeNumber = '';
-		$scope.tediousTask = '';
 		$scope.adjective = '';
+		$scope.tediousTask = '';
+		$scope.uselessSkill = '';
+		$scope.display = 0
 	};
-
-	$scope.display = 0;
 
 }]);
