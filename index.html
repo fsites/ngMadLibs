@@ -21,9 +21,9 @@
 
 	<!-- Inputs -->
 	<div class="main-content">
-		<div id="input-container">
+		<div id="input-container" ng-show="display == 0">
 			<h2 id="input-header">Please Provide the following words:</h2>
-			<form id="inputs" ng-submit="submitForm()">
+			<form id="inputs" name="madlib" ng-submit="onSubmit()">
 				<input placeholder="Female name" type="text" ng-model="femaleName" required/>
 				<input placeholder="Dirty task" type="text" ng-model="dirtyTask" required/>
 				<input placeholder="Obnoxious Celebrity" type="text" ng-model="obnoxiousCelebrity" required/>
@@ -38,10 +38,11 @@
 		</div>
 
 	<!-- MadLib Output -->
-		<div id="madlib-container">
+		<div id="madlib-container" ng-show="display == 1">
 			<div class="madlib-text">
 				<p>{{femaleName}} was a {{jobTitle}} who loved her technology. Although she loved parts of her job, she absolutely hated  {{tediousTask}} and {{dirtyTask}}. So, {{femaleName}} met with her life mentor {{celebrity}} who told her to learn how to {{uselessSkill}} with Thinkful. Thinkful didn't offer a course on {{uselessSkill}} so she studied programming instead.</p> 
 				<p>What a great decision! With her new skills, {{femaleName}} built a(n) {{adjective}} robot named {{obnoxiousCelebrity}} that not only loved {{dirtyTask}} but did it {{hugeNumber}} faster. </p>
+				<button ng-click="reset()">Reset</button>
 			</div>
 		</div>
 	</div>
