@@ -85,11 +85,14 @@ input {
 #madlib-container.ng-enter,
 #madlib-container.ng-leave.ng-leave-active {
 	opacity: 0;
+	margin-bottom: -3em;
+
 }
 
 #madlib-container.ng-leave,
 #madlib-container.ng-enter.ng-enter-active {
 	opacity: 1;
+	margin-bottom: 0;
 }
 
 

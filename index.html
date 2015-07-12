@@ -24,7 +24,7 @@
 	<div class="main-content">
 		<div id="input-container" ng-show="display == 0">
 			<h2 id="input-header">Please Provide the following words:</h2>
-			<form id="inputs" name="madlib" ng-submit="onSubmit()">
+			<form id="inputs" name="madlib">
 				<input placeholder="Female name" type="text" ng-model="femaleName" required/>
 				<input placeholder="Dirty task" type="text" ng-model="dirtyTask" required/>
 				<input placeholder="Obnoxious Celebrity" type="text" ng-model="obnoxiousCelebrity" required/>
@@ -34,7 +34,7 @@
 				<input placeholder="Tedious task" type="text" ng-model="tediousTask" required/>
 				<input placeholder="Something clowns do" type="text" ng-model="uselessSkill" required/>
 				<input placeholder="Adjective" type="text" ng-model="adjective" required/>
-				<input class="button" type="submit" ng-click="show=!show" value="Generate Mad Lib" required/>
+				<input class="button" type="submit" ng-click="show=!show; onSubmit()" value="Generate Mad Lib" required/>
 			</form>
 		</div>
 

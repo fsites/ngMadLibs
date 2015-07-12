@@ -13,6 +13,7 @@ angular.module('madlibs', ['ngAnimate'])
 	};
 
 	$scope.reset = function() {
+		$scope.display = 0;
 		$scope.femaleName = '';
 		$scope.dirtyTask = '';
 		$scope.obnoxiousCelebrity = '';
@@ -22,7 +23,6 @@ angular.module('madlibs', ['ngAnimate'])
 		$scope.adjective = '';
 		$scope.tediousTask = '';
 		$scope.uselessSkill = '';
-		$scope.display = 0
 	};
 
 }]);
