@@ -73,6 +73,7 @@ input {
 	height: 320px;
 	border: 2px solid black;
 	margin: 0 auto;
+	transition: all linear 1s;
 }
 
 .madlib-text {
@@ -81,8 +82,15 @@ input {
 	font-size: 16px;
 }
 
+#madlib-container.ng-enter,
+#madlib-container.ng-leave.ng-leave-active {
+	opacity: 0;
+}
 
-
+#madlib-container.ng-leave,
+#madlib-container.ng-enter.ng-enter-active {
+	opacity: 1;
+}
 
 
 
